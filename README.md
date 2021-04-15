@@ -1,0 +1,2 @@
+# PromotionsAndPlaces
+ Proyecto Aplicaciones Moviles
