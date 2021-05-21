@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AceptarRechazar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="356dp"
+        android:layout_height="282dp"
+        app:srcCompat="@mipmap/promoplaces_foreground" />
+
+    <TextView
+        android:id="@+id/TextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="@string/editxt_enviarte"
+        android:textColor="@color/color_Black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_permitir"
+        android:onClick="Permitir"
+        android:background="@drawable/btn_redondeado_blanco"
+        android:backgroundTint="#FF5722"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_rechazar"
+        android:onClick="Rechazar"
+        android:background="@drawable/btn_redondeado_blanco"
+        android:backgroundTint="#FF5722"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

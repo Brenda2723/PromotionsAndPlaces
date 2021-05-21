@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarDatos">
+
+    <ScrollView
+        android:layout_width="728dp"
+        android:layout_height="522dp"
+        android:background="#d8000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_vaso"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="39dp">
+
+            <ImageView
+                android:layout_width="247dp"
+                android:layout_height="103dp"
+                android:layout_marginBottom="1dp"
+                android:background="#000000"
+                android:src="@mipmap/promoplaces"></ImageView>
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:editable="true"
+                android:hint="@string/label_nombre"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:editable="true"
+                android:hint="@string/label_apellido"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/nomusuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:hint="@string/label_nomusuario"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/crearpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:hint="@string/label_contraseñaActual"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/crearpass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:hint="@string/label_contraseñaNueva"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/fecha_nac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:hint="@string/label_fecha_nac"
+                android:inputType="date"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+
+            <EditText
+                android:id="@+id/cod_postal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input"
+                android:hint="@string/label_cod_postal"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+
+            <Button
+                android:id="@+id/btn_aceptarcuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_fondo_color"
+                android:elevation="5dp"
+                android:onClick="Datos_Guardados"
+                android:text="@string/btn_aceptar"
+                android:textColor="#fff"
+                android:textSize="16sp"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

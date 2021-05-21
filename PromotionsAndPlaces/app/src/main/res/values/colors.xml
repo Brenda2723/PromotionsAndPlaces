@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E1886C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="write">#fff</color>
+    <color name="color_Black">#000000</color>
+    <color name="quemado">#801810</color>
+</resources>
