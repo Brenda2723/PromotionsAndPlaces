@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">  Promotions ~ Places</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="Info_guardada">Información guardada con éxito</string>
+
+    <string name="editxt_enviarte">P~P desea enviarte información</string>
+    <string name="editxt_ilusión">Que ilusión tenerte con nosotros!</string>
+    <string name="editxt_blue">*Antes de comenzar, ¡Enciende tu bluetooth!</string>
+    <string name="txt_permitir">Permitir</string>
+    <string name="txt_rechazar">Rechazar</string>
+    <string name="txt_menu">MENÚ</string>
+    <string name="txt_redes">Redes sociales</string>
+    <string name="txt_galeria">Galería</string>
+    <string name="txt_datosGuardados">Los cambios se guardaron exitosamente</string>
+
+    <string name="txt_bienvenida">¡Hola, Bienvenido!</string>
+    <string name="txt_cupones">Cupones y ofertas</string>
+    <string name="txt_nuevoCupon">  Nuevo Cupón</string>
+    <string name="txt_CuponSor">  Cupón Sorpresa</string>
+    <string name="porcientoDesc">  20% de Descuento</string>
+    <string name="Domingo">  Viernes de promoción</string>
+
+
+
+
+
+    <string name="btn_validar">Validar cupón</string>
+    <string name="btn_iniciar">Iniciar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_cerrarSesion">Cerrar Sesión</string>
+    <string name="btn_permitir">Permitir</string>
+    <string name="btn_regresar">Regresar</string>
+    <string name="btn_comprobar">Comprobar cupones</string>
+    <string name="btn_rechazar">Rechazar</string>
+    <string name="btn_entendido">Entendido</string>
+
+    <string name="button_loginEntrar">Entrar</string>
+    <string name="button_loginRegistrar">Registrarse</string>
+
+    <string name="label_usuario">Usuario</string>
+    <string name="label_pass">Contraseña</string>
+    <string name="btn_entrar">Entrar</string>
+
+    <string name="label_nombre">Nombre</string>
+    <string name="label_apellido">Apellido</string>
+    <string name="label_nomusuario">Usuario</string>
+    <string name="label_newpass">Crear contraseña</string>
+    <string name="label_fecha_nac">Fecha de nacimiento</string>
+    <string name="label_cod_postal">Código postal</string>
+    <string name="label_contraseñaActual">Contraseña actual</string>
+    <string name="label_contraseñaNueva">Contraseña nueva</string>
+    <string name="txt_cup">CUPÓN $199</string>
+    <string name="txt_cuponValido">CONCEPTO          Cupón valido por la cantidad de $199</string>
+    <string name="txt_pideEmpleado">Pide a uno de los empleados de P~P  que te haga valida la promoción</string>
+    <string name="txt_aplica">Sólo aplica en cervezas light</string>
+
+
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="label_term_cond">Al hacer clic en Aceptar admite los terminos y condiciones de P~P</string>
+
+    <string name="tituloUno">Terminos y Condiciones</string>
+    <string name="textoUno">Bienvenido a los Términos y Condiciones de Uso de Promotions~Places en base a los servicios de
+        P~P. Estos constituyen un acuerdo vinculante entre cualquier persona física o moral (en adelante e indistintamente,
+        el “Usuario” o los “Usuarios”) que descarguen, usen o interactúen con la Aplicación y/o soliciten cualquier servicio
+        disponible a través de la Aplicación.</string>
+    <string name="textoDos">Si usted no está de acuerdo con los presentes, no descargue la Aplicación en su dispositivo, no la
+        utilice, ni interactúe con los Servicios. El Usuario garantiza tener la edad mínima necesaria para utilizar y solicitar
+        los Servicios, que estará vinculada con la edad mínima requerida.</string>
+    <string name="textoTres">Por otra parte, las Notificaciones consisten en que el Usuario pueda recibir notificaciones sobre
+        la publicidad de P~P, recibir cupones, descuentos y ofertas, siempre y cuando cuente con un sistema Bluetooth®
+        habilitado y haya concedido permiso para que la Aplicación lo utilice.</string>
+
+
+
+
+
+    <string name="start_button_text">Comenzar</string>
+    <string name="stop_button_text">Parar</string>
+    <string name="location_access_needed">Esta aplicación necesita acceso a la localización</string>
+    <string name="grant_location_access">Por favor conceda permisos de localización para que la aplicación pueda detectar beacons</string>
+    <string name="not_support_bluetooth_msg">Este dispositivo no soporta bluetooth, no es posible buscar beacons</string>
+    <string name="cancel_button_text">Cancelar</string>
+    <string name="location_disabled">Localización en modo alta precisión no activado</string>
+    <string name="location_settings">Abrir ajustes de localización</string>
+    <string name="location_not_granted">Ya que el permiso de localización no ha sido concedido,</string>
+    <string name="cannot_discover_beacons">esta aplicación no podrá buscar beacons</string>
+    <string name="funcionality_limited">Funcionalidad limitada</string>
+    <string name="no_bluetooth_msg">Con el bluetooth desactivado no es posible buscar beacons</string>
+    <string name="start_looking_for_beacons">Empezando a buscar beacons</string>
+    <string name="stop_looking_for_beacons">Parando la búsqueda de beacons</string>
+    <string name="no_beacons_detected">No se ha encontrado Beacon</string>
+    <string name="beacon_detected">Beacon P~P te tiene una oferta!!</string>
+
+
+</resources>

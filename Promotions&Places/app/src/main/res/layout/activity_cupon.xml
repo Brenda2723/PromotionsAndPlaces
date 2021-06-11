@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1A1A"
+    tools:context=".Cupon">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="417dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="442dp"
+            android:layout_height="441dp"
+            app:srcCompat="@drawable/promocion" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="259dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_fondo_color"
+        android:elevation="5dp"
+        android:onClick="NotificationlFragment"
+        android:text="@string/btn_regresar"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aceptarcuenta4"
+        app:layout_constraintVertical_bias="0.32"></Button>
+
+    <Button
+        android:id="@+id/btn_aceptarcuenta4"
+        android:layout_width="259dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/btn_fondo_color"
+        android:elevation="5dp"
+        android:onClick="ConceptoCupon"
+        android:text="@string/btn_aceptar"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.827"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosGuardados">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondocupon"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-40dp">
+
+        <Button
+            android:id="@+id/btn_aceptarcuenta2"
+            android:layout_width="324dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_fondo_color"
+            android:elevation="5dp"
+            android:onClick="Regresar_Home"
+            android:text="@string/btn_regresar"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="203dp"
+            tools:layout_editor_absoluteY="321dp"></Button>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="286dp"
+            android:layout_height="176dp"
+            android:src="@drawable/promotionsicono"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="54dp"></ImageView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="276dp"
+            android:layout_height="191dp"
+            android:gravity="center"
+            android:text="@string/txt_datosGuardados"
+            android:textSize="40sp"
+            tools:layout_editor_absoluteX="397dp"
+            tools:layout_editor_absoluteY="54dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
