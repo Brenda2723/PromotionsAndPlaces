@@ -14,7 +14,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="441dp"
+        android:layout_width="380dp"
         android:layout_height="262dp"
         app:srcCompat="@drawable/icono_ipublicity2" />
 

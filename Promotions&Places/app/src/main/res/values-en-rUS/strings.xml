@@ -88,6 +88,8 @@
     <string name="stop_looking_for_beacons">Stopping the search for beacons</string>
     <string name="no_beacons_detected">Beacon not found</string>
     <string name="beacon_detected">Beacon P~P has an offer for you!!</string>
+    <string name="channel_name">Promotions~Places</string>
+    <string name="channel_description">New Promotions</string>
 
 
 </resources>

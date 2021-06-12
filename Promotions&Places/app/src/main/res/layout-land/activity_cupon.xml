@@ -26,16 +26,18 @@
 
     <Button
         android:id="@+id/btn_aceptarcuenta4"
-        android:layout_width="259dp"
-        android:layout_height="56dp"
+        android:layout_width="263dp"
+        android:layout_height="45dp"
         android:background="@drawable/btn_fondo_color"
         android:elevation="5dp"
         android:onClick="ConceptoCupon"
         android:text="@string/btn_aceptar"
         android:textColor="#fff"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="339dp"></Button>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954"></Button>
 
     <Button
         android:id="@+id/btn_regresar"
@@ -47,7 +49,9 @@
         android:text="@string/btn_regresar"
         android:textColor="#fff"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="463dp"
-        tools:layout_editor_absoluteY="336dp"></Button>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954"></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

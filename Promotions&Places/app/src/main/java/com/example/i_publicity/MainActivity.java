@@ -3,6 +3,9 @@ package com.example.i_publicity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.bluetooth.BluetoothAdapter;
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
@@ -51,6 +54,7 @@ import java.util.Collection;
 //public class MainActivity extends AppCompatActivity implements {
     public class MainActivity extends AppCompatActivity implements View.OnClickListener, BeaconConsumer, RangeNotifier{
 
+    private static final String CHANNEL_ID = "Promotions~Places";
     protected final String TAG = MainActivity.this.getClass().getSimpleName();;
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
     private static final int REQUEST_ENABLE_BLUETOOTH = 1;
@@ -66,6 +70,21 @@ import java.util.Collection;
 
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
+    private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel_name);
+            String description = getString(R.string.channel_description);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

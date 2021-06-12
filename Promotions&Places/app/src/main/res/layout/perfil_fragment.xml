@@ -76,7 +76,7 @@
             android:id="@+id/textViewName"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="     @string/label_usuario"
+            android:text="Maria Hernandez Carrillo"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="18sp"/>
@@ -93,7 +93,7 @@
             android:id="@+id/textViewNac"
             android:layout_width="match_parent"
             android:layout_height="46dp"
-            android:text="     @string/label_fecha_nac"
+            android:text="14-09-1998"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="18sp"/>
@@ -110,7 +110,7 @@
             android:id="@+id/textViewCP"
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:text="     @string/label_cod_postal"
+            android:text="20263"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="18sp"/>
