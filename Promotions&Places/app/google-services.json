@@ -1,17 +1,4 @@
 {
-  "project_info": {
-    "project_number": "238889658339",
-    "project_id": "ipublicity-8540b",
-    "storage_bucket": "ipublicity-8540b.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:238889658339:android:e183d039b00267732ee2d6",
-        "android_client_info": {
-          "package_name": "com.example.i_publicity"
-        }
-      },
       "oauth_client": [
         {
           "client_id": "238889658339-a1j91vs2nm9l6vb0uaf0r338o74fie55.apps.googleusercontent.com",
