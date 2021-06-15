@@ -8,80 +8,68 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class LoginEntrarActivity extends AppCompatActivity {
 
-    EditText editTextUsuario;
-    EditText editTextContrasena;
-    Button btn_entrar_cuenta;
-    String usuario = "";
-    String contrasena = "";
+      private EditText emailEditText;
+      private EditText passwordEditText;
+      private Button btnSendToLogin;
+
+      private String email = "";
+      private String password = "";
+
+      private FirebaseAuth mAuth;
 
 
-    private FirebaseAuth mAuth;
+      protected void onCreate(Bundle savedInstanceState){
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_login_entrar);
 
+            mAuth = FirebaseAuth.getInstance();
 
-   // private DatabaseReference mDatabase;
+            emailEditText = (EditText) findViewById(R.id.emailEditText);
+            passwordEditText = (EditText) findViewById(R.id.passwordEditText);
+            btnSendToLogin = (Button) findViewById(R.id.btnSendToLogin);
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_entrar);
-        mAuth = FirebaseAuth.getInstance();
+            btnSendToLogin.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
 
-       // mDatabase = FirebaseDatabase.getInstance().getReference();
+                        email = emailEditText.getText().toString();
+                        password = passwordEditText.getText().toString();
 
-        editTextUsuario = findViewById(R.id.user);
-        editTextContrasena = findViewById(R.id.password_toggle);
-        btn_entrar_cuenta = findViewById(R.id.btn_entrar_cuenta);
+                        if (!email.isEmpty() && !password.isEmpty()){
+                              loginUser();
+                        }
+                        else{
+                              Toast.makeText(LoginEntrarActivity.this, "Complete los campos",Toast.LENGTH_SHORT).show();
+                        }
 
-        btn_entrar_cuenta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                usuario = editTextUsuario.getText().toString();
-                contrasena = editTextContrasena.getText().toString();
+                  }
+            });
+      }
 
-                if (!usuario.isEmpty() && !contrasena.isEmpty()) {
-                    loginUser();
-                } else {
-                    Toast.makeText(LoginEntrarActivity.this, "Complete los campos", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+      private void loginUser(){
+            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                  @Override
+                  public void onComplete(@NonNull Task<AuthResult> task) {
 
-    }
+                        if (task.isSuccessful()){
+                              startActivity(new Intent(LoginEntrarActivity.this, ProfileActivity.class));
+                              finish();
+                        }
+                        else{
+                              Toast.makeText(LoginEntrarActivity.this, "No se pudo iniciar sesion y compruebe los datos",Toast.LENGTH_SHORT).show();
+                        }
 
-    private void loginUser() {
-        mAuth.signInWithEmailAndPassword(usuario, contrasena).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    startActivity(new Intent(LoginEntrarActivity.this, Agradecimientos.class));
-                    finish();
-                } else {
-                    Toast.makeText(LoginEntrarActivity.this, "Sesión incorrecta", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-
-    }
-
-    public void activity_regresar(View view) {
-        Intent principal = new Intent(this, LoginActivity.class);
-        startActivity(principal);
-    }
+                  }
+            });
 
       }
+}

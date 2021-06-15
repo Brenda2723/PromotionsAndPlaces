@@ -4,22 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginEntrarActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/fondologin"
+        android:src="@drawable/fondoregistro"
         android:scaleType="centerCrop"/>
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="49dp"
-        android:layout_height="37dp"
-        android:layout_gravity="bottom|left"
-        android:background="#FFFFFF"
-        android:onClick="activity_regresar"
-        android:tint="#151515"
-        app:srcCompat="@drawable/abc_vector_test" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,59 +21,50 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/promotionsicono">
-        </ImageView>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/promotionsicono"></ImageView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <EditText
-            android:id="@+id/user"
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/label_usuario"
-            android:inputType="text"
-            android:textColor="#fff"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:background="@drawable/btn_redondeado_blanco"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <EditText
-            android:id="@+id/password_toggle"
+            android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/label_pass"
-            android:textColor="#fff"
-            android:inputType="textPassword"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"/>
+            android:background="@drawable/btn_redondeado_blanco"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
 
         <Button
-            android:id="@+id/btn_entrar_cuenta"
+            android:id="@+id/btnSendToLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="30dp"
-            android:elevation="5dp"
-            android:background="@drawable/btn_fondo_color"
-            android:text="@string/btn_entrar"
-            android:textColor="#fff"
-            android:textSize="16sp">
-        </Button>
+            android:text="Acceder" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
 
     </LinearLayout>
 

@@ -23,9 +23,6 @@
     <string name="Domingo">  Viernes de promoción</string>
 
 
-
-
-
     <string name="btn_validar">Validar cupón</string>
     <string name="btn_iniciar">Iniciar</string>
     <string name="btn_editar">Editar</string>
@@ -73,9 +70,6 @@
         habilitado y haya concedido permiso para que la Aplicación lo utilice.</string>
 
 
-
-
-
     <string name="start_button_text">Comenzar</string>
     <string name="stop_button_text">Parar</string>
     <string name="location_access_needed">Esta aplicación necesita acceso a la localización</string>
@@ -94,6 +88,8 @@
     <string name="beacon_detected">Beacon P~P te tiene una oferta!!</string>
     <string name="channel_name">Promotions~Places</string>
     <string name="channel_description">Nueva Promocion</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_dashboard">Dashboard</string>
 
 
 </resources>

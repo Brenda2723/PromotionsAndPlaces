@@ -12,15 +12,6 @@
         android:src="@drawable/fondoregistro"
         android:scaleType="centerCrop"/>
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="49dp"
-        android:layout_height="37dp"
-        android:layout_gravity="bottom|left"
-        android:background="#FFFFFF"
-        android:onClick="activity_regresar"
-        android:tint="#151515"
-        app:srcCompat="@drawable/abc_vector_test" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,137 +24,53 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginBottom="1dp"
-            android:src="@drawable/promotionsicono">
-        </ImageView>
+            android:src="@drawable/promotionsicono"></ImageView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <EditText
-            android:id="@+id/nombre"
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/label_nombre"
-            android:inputType="text"
-            android:textColor="#fff"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:background="@drawable/btn_redondeado_blanco"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
 
         <EditText
-            android:id="@+id/apellido"
+            android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/label_apellido"
-            android:textColor="#fff"
-            android:inputType="text"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"/>
+            android:background="@drawable/btn_redondeado_blanco"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword" />
 
-        <EditText
-            android:id="@+id/nomusuario"
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/label_nomusuario"
-            android:textColor="#fff"
-            android:inputType="text"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"/>
-
-        <EditText
-            android:id="@+id/crearpass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/label_newpass"
-            android:textColor="#fff"
-            android:inputType="textPassword"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"/>
-
-        <EditText
-            android:id="@+id/fecha_nac"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/label_fecha_nac"
-            android:textColor="#fff"
-            android:inputType="date"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"/>
-
-        <EditText
-            android:id="@+id/cod_postal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/label_cod_postal"
-            android:textColor="#fff"
-            android:inputType="number"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#ccc"
-            android:background="@drawable/input"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"/>
-
-        <TextView
-            android:id="@+id/terminos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#fff"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="30dp"
-            android:text="@string/label_term_cond"
-            >
-        </TextView>
+            android:layout_height="30dp" />
 
         <Button
-            android:id="@+id/btn_aceptarcuenta"
+            android:id="@+id/signUpbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/btn_fondo_color"
-            android:elevation="5dp"
-            android:onClick="registerUser"
-            android:text="@string/btn_aceptar"
-            android:textColor="#fff"
-            android:textSize="16sp"></Button>
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnSendToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ya tengo Cuenta" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
 
     </LinearLayout>
 
